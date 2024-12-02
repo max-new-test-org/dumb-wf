@@ -1,0 +1,38 @@
+name: MoneyWorkflow
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "main" branch
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Define the jobs
+jobs:
+  cash_register:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ch-Ching Sound of Greed
+        run: echo "Money, it's a gas. Grab that cash with both hands and make a stash."
+
+  working_for_it:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Endless Grind Anthem
+        run: echo "Money, it's a hit. Don't give me that do-goody-good bullshit."
+
+  climbing_ladders:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Corporate Climb Blues
+        run: echo "I'm in the high-fidelity first-class traveling set, and I think I need a Learjet."
+
+  final_cut:
+    runs-on: ubuntu-latest
+    steps:
+      - name: The Root of All Evil
+        run: echo "Money, so they say, is the root of all evil today. But if you ask for a rise, it's no surprise that they're giving none away."
